@@ -1,0 +1,37 @@
+{
+  "name": "Teacher",
+  "fields": [
+    {
+      "fieldName": "name",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "age",
+      "fieldType": "Integer"
+    },
+    {
+      "fieldName": "kemu",
+      "fieldType": "String"
+    }
+  ],
+  "relationships": [
+    {
+      "relationshipType": "one-to-many",
+      "otherEntityName": "student",
+      "otherEntityRelationshipName": "teacher",
+      "relationshipName": "student"
+    }
+  ],
+  "changelogDate": "20200918053049",
+  "entityTableName": "teacher",
+  "dto": "no",
+  "pagination": "no",
+  "service": "no",
+  "jpaMetamodelFiltering": false,
+  "fluentMethods": true,
+  "readOnly": false,
+  "embedded": false,
+  "clientRootFolder": "userService",
+  "applications": "*",
+  "microserviceName": "userService"
+}
